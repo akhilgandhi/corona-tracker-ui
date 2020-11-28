@@ -1,0 +1,69 @@
+<main class="app-frame mat-app-background">
+    <h1>Corona Virus Tracker</h1>
+    <h3>This web application provides data for corona virus cases globally as well as provide statiscal insights for the
+        data.</h3>
+    <p>This application fetches data from <a mat-button target="_blank" #tooltip="matTooltip"
+            matTooltip="COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University"
+            href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series">CSSEGISandData</a>
+    </p>
+</main>
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" fxFlex.md="33%">
+            <mat-card class="alert-card">
+                <mat-card-title>Cases Discovered</mat-card-title>
+                <mat-card-content>
+                    <h2>{{ homepage.totalConfirmedCases }}</h2>
+                    <p>
+                        corona virus cases reported as of today across the globe.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions align="end">
+                    <button mat-button type="button" (click)="openDialog('discovered cases')">MORE...</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" fxFlex.md="33%">
+            <mat-card class="alert-card">
+                <mat-card-title>Active Cases</mat-card-title>
+                <mat-card-content>
+                    <h2>{{ homepage.totalActiveCases }}</h2>
+                    <p>
+                        corona virus cases active as of today across the globe.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions align="end">
+                    <button mat-button type="button" (click)="openDialog('active cases')">MORE...</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" fxFlex.md="33%">
+            <mat-card class="deceased-card">
+                <mat-card-title>Fatalities</mat-card-title>
+                <mat-card-content>
+                    <h2>{{ homepage.totalFatalities }}</h2>
+                    <p>
+                        fatalities due to corona virus as of today across the globe.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions align="end">
+                    <button mat-button type="button" (click)="openDialog('deceased cases')">MORE...</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" fxFlex.md="33%">
+            <mat-card class="recovered-card">
+                <mat-card-title>Recovered Cases</mat-card-title>
+                <mat-card-content>
+                    <h2>{{ homepage.totalRecovered }}</h2>
+                    <p>
+                        corona virus patients recovered as of today across the globe.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions align="end">
+                    <button mat-button type="button" (click)="openDialog('recovered cases')">MORE...</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

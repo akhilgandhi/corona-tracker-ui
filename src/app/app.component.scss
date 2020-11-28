@@ -1,0 +1,26 @@
+@import '~@angular/material/theming';
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-tab-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  @include mat-elevation(4);
+}
+
+  .router-content {
+    margin-top: 60px;
+  }
+
+  html, body, app-root, .app-frame {
+    overflow: auto;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    color: #000;
+}

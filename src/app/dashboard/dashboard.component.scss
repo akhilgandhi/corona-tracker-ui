@@ -1,0 +1,65 @@
+@import '~@angular/material/theming';
+
+.content {
+    padding: 24px;
+}
+
+.alert-card {
+    max-width: 400px;
+    max-height: 400px;
+
+    color: #000000;
+    background-color: #ff6f60;
+
+    @include mat-elevation(1);
+    @include mat-elevation-transition;
+
+    &:hover {
+        @include mat-elevation(8);
+    }
+}
+
+.deceased-card {
+    max-width: 400px;
+    max-height: 400px;
+
+    color: #000000;
+    background-color: #c2c2c2;
+
+    @include mat-elevation(1);
+    @include mat-elevation-transition;
+
+    &:hover {
+        @include mat-elevation(8);
+    }
+}
+
+.recovered-card {
+    max-width: 400px;
+    max-height: 400px;
+
+    color: #000000;
+    background-color: #76d275;
+
+    @include mat-elevation(1);
+    @include mat-elevation-transition;
+
+    &:hover {
+        @include mat-elevation(8);
+    }
+}
+
+.mat-card-content {
+    margin-top: 2em;
+}
+
+main {
+    box-sizing: border-box;
+    height: 300px;
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 84px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+  }

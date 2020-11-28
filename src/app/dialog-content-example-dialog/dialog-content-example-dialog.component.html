@@ -1,0 +1,20 @@
+<h2 mat-dialog-title>More statistics for {{ cardName }}</h2>
+<mat-dialog-content class="mat-typography">
+  <p *ngIf="cardName === 'discovered cases'">
+    Country with highest confirmed cases is <strong>{{ homepage.countryWithHighestConfirmedCases }}</strong> with <strong>{{ homepage.highestConfirmedCasesByCountry }}</strong> cases so far. <br>
+    Total confirmed cases in India are <strong>{{ homepage.totalConfirmCasesIndia }}</strong>.
+  </p>
+  <p *ngIf="cardName === 'active cases'">No data yet!!!</p>
+  <p *ngIf="cardName === 'deceased cases'">
+    The virus has a mortality rate (deaths per million) of {{ homepage.mortalityRate }} approximately. <br>
+    Country with highest number of fatalities is <strong>{{ homepage.countryWithHighestFatalities }}</strong> with <strong>{{ homepage.highestFatalitiesByCountry }}</strong>. <br>
+    Total deaths happened in India are <strong>{{ homepage.totalFatalitiesIndia }}</strong>.
+  </p>
+  <p *ngIf="cardName === 'recovered cases'">
+    Country with highest number of recovered cases is <strong>{{ homepage.countryWithHighestRecoveredCases }}</strong> with <strong>{{ homepage.highestRecoveredCasesByCountry }}</strong> patients recovered so far. <br>
+    Total patients recovered in India are <strong>{{ homepage.totalRecoveredCasesIndia }}</strong>.
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close [color]="'warn'">Close</button>
+</mat-dialog-actions>
