@@ -55,11 +55,24 @@
 
 main {
     box-sizing: border-box;
-    height: 300px;
     display: block;
-    padding-top: 100px;
+    padding-top: 130px;
     padding-bottom: 84px;
     padding-left: 24px;
     padding-right: 24px;
     text-align: center;
-  }
+}
+
+.left-content {
+    max-width: 600px;
+}
+
+.right-content {
+    max-width: 600px;
+    max-height: 600px;
+
+    img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}

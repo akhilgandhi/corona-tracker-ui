@@ -1,11 +1,17 @@
-<main class="app-frame mat-app-background">
-    <h1>Corona Virus Tracker</h1>
-    <h3>This web application provides data for corona virus cases globally as well as provide statiscal insights for the
-        data.</h3>
-    <p>This application fetches data from <a mat-button target="_blank" #tooltip="matTooltip"
-            matTooltip="COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University"
-            href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series">CSSEGISandData</a>
-    </p>
+<main class="app-frame mat-app-background" fxLayout="row wrap" fxLayoutGap="0px grid">
+    <div class="left-content" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="40%" fxFlex.md="50%">
+        <h1>Corona Virus Tracker</h1>
+        <h3>This web application provides data for corona virus cases globally as well as provide statiscal insights for
+            the
+            data.</h3>
+        <p>This application fetches data from <a mat-button target="_blank" #tooltip="matTooltip"
+                matTooltip="COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University"
+                href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series">CSSEGISandData</a>
+        </p>
+    </div>
+    <div class="right-content" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="40%" fxFlex.md="50%">
+        <img src="../../assets/img/social_distancing.svg" alt="social_distancing">
+    </div>
 </main>
 <div class="content">
     <div fxLayout="row wrap" fxLayoutGap="16px grid">

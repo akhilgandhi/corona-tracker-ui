@@ -12,13 +12,11 @@
     </button>
   </nav>
   <mat-menu #themeMenu="matMenu" xPosition="before" yPosition="below">
-    <button mat-menu-item (click)="changeTheme('light-theme')">
-      <mat-icon aria-hidden="true" [color]="'accent'" id="light">done</mat-icon> 
-      Light
+    <button mat-menu-item (click)="changeTheme('light-theme')"> 
+      <span>LIGHT</span>
     </button>
-    <button mat-menu-item (click)="changeTheme('dark-theme')">
-      <mat-icon aria-hidden="true" [color]="'accent'" id="dark">done</mat-icon> 
-      Dark
+    <button mat-menu-item (click)="changeTheme('dark-theme')"> 
+      <span>DARK</span>
     </button>
   </mat-menu>
   <div class="router-content">
